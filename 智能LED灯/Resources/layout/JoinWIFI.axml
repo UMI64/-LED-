@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/WIFINameLinearLayout"
+		android:layout_centerHorizontal="true">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="WIFI名:"
+			android:id="@+id/WIFINameText"/>
+		<EditText
+			android:text="fff"
+			android:textSize="10sp"
+			android:inputType="textMultiLine"
+			android:layout_width="150dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/WIFINameEditText"
+			android:layout_marginLeft="10dp" />
+	</LinearLayout>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="WIFI密码:"
+		android:id="@+id/WIFIPWDText"
+		android:layout_alignBaseline="@+id/WIFIPWDEditText"
+		android:layout_toLeftOf="@+id/WIFIPWDEditText" />
+	<EditText
+		android:text="fff"
+		android:textSize="10sp"
+		android:inputType="textWebPassword"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:id="@+id/WIFIPWDEditText"
+		android:layout_below="@id/WIFINameLinearLayout"
+		android:layout_alignEnd="@id/WIFINameLinearLayout" />
+	<Button
+		android:text="确认"
+		android:layout_width="wrap_content"
+		android:layout_height="40dp"
+		android:id="@+id/OkButton"
+		android:layout_below="@id/WIFIPWDEditText"
+		android:layout_centerHorizontal="true"/>
+	<TextView
+		android:text=""
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/WIFIPWDEditText"
+		android:id="@+id/StateTextView"
+		android:layout_alignBaseline="@+id/OkButton"
+		android:layout_toEndOf="@+id/OkButton"
+		android:layout_marginLeft="20dp" />
+</RelativeLayout>
